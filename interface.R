@@ -42,6 +42,13 @@ ui <- fluidPage(
   
   tags$p("This Shiny App simulates and evaluates the impact of various intervention strategies on HAIs outcomes by modeling different intervention factors.", 
          style = "text-align: left; font-weight: bold;"),
+    tags$p(
+    tags$b("Reference: "),
+    "Full methodological background available in the published article: ",
+    tags$a(
+      href = "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0343837",
+      target = "_blank",
+      "https://doi.org/10.1371/journal.pone.0343837")),
   
   tags$p("States: 0- Admission into hospital, 1- Hospital-Acquired Infection, 2-Discharged alive, 3-Death, 4-Discharged Alive after HAI, 5-Death after HAI", 
          style = "text-align: left; font-weight: bold;"),
