@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.vscode/
+*.tsbuildinfo
+*.log
+.DS_Store
+tmp_images.json
+vite.config.js
+vite.config.d.ts
