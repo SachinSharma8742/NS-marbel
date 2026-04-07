@@ -143,19 +143,7 @@ export default function Hero() {
       </motion.div>
 
       {/* Scroll indicator — breathing line */}
-      <motion.div
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 2.5, duration: 1 }}
-      >
-        <span className="font-sans text-[9px] tracking-[0.3em] uppercase text-marble/30">Scroll</span>
-        <motion.div
-          className="w-px h-10 bg-gradient-to-b from-[#C6A15B]/50 to-transparent origin-top"
-          animate={{ scaleY: [0.6, 1, 0.6], opacity: [0.3, 0.7, 0.3] }}
-          transition={{ duration: 2.5, repeat: Infinity, ease: 'easeInOut' }}
-        />
-      </motion.div>
+
     </section>
   );
 }

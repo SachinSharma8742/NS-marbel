@@ -4,32 +4,32 @@ import { motion, useInView } from 'framer-motion';
 const products = [
   {
     title: 'Radha Krishna Murti',
-    image: '/images/gallery_1.png',
+    image: '/images/product_1.png',
     alt: 'White marble Radha Krishna sculpture with detailed drapery and ornament work'
   },
   {
     title: 'Lord Ganesha Murti',
-    image: '/images/gallery_2.png',
+    image: '/images/product_2.png',
     alt: 'Makrana marble Ganesha murti with hand-finished sacred details'
   },
   {
     title: 'Vishnu Lakshmi Murti',
-    image: '/images/gallery_3.png',
+    image: '/images/product_3.png',
     alt: 'Vishnu Lakshmi marble sculpture crafted for temple and home sanctum spaces'
   },
   {
     title: 'Shiv Parivar Murti',
-    image: '/images/gallery_4.png',
+    image: '/images/product_4.png',
     alt: 'Shiv Parivar composition in premium white marble with fine carving depth'
   },
   {
     title: 'Hanuman Ji Murti',
-    image: '/images/gallery_5.png',
+    image: '/images/product_5.png',
     alt: 'Hanuman ji marble murti showing expressive facial carving and smooth polish'
   },
   {
     title: 'Durga Mata Murti',
-    image: '/images/gallery_6.png',
+    image: '/images/product_6.png',
     alt: 'Durga Mata sculpture in Makrana marble with intricate handcrafted features'
   },
 ];
