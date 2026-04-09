@@ -228,7 +228,7 @@ export default function FeaturedSection() {
       allIds.map((id) => ({
         id,
         title: productData[id],
-        image: `images/processed/img_${id}.png`,
+        image: `/images/processed/img_${id}.png`,
         alt: productData[id],
       }))
     );
