@@ -42,6 +42,31 @@ function shuffle<T>(arr: T[]): T[] {
   return a;
 }
 
+/* ── Optimized Image Component ───────────────────────────────── */
+function OptimizedImage({ src, alt, className }: { src: string; alt: string; className?: string }) {
+  const [isLoaded, setIsLoaded] = useState(false);
+  
+  return (
+    <div className="relative w-full h-full">
+      {/* Loading Skeleton */}
+      {!isLoaded && (
+        <div className="absolute inset-0 bg-[#0D0D0E] animate-pulse flex items-center justify-center">
+          <div className="w-8 h-8 rounded-full border-2 border-gold/20 border-t-gold/60 animate-spin" />
+        </div>
+      )}
+      <img
+        src={src}
+        alt={alt}
+        loading="lazy"
+        decoding="async"
+        draggable={false}
+        onLoad={() => setIsLoaded(true)}
+        className={`${className} ${isLoaded ? 'opacity-100' : 'opacity-0'} transition-opacity duration-700`}
+      />
+    </div>
+  );
+}
+
 /* ── Scrolling Row Component ──────────────────────────────────── */
 const SPEED = 0.6;          // px per frame
 const RESUME_DELAY = 2000;  // ms after drag release
@@ -192,10 +217,9 @@ function ScrollRow({ items, direction, progress }: ScrollRowProps) {
             style={{ width: '280px', y: yTranslate }}
           >
             <div className="relative aspect-[3/4] overflow-hidden rounded-xl mb-3 gold-glow-hover transition-shadow duration-500">
-              <img
+              <OptimizedImage
                 src={item.image}
                 alt={item.alt}
-                draggable={false}
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
               {/* Overlay gradient */}
@@ -228,7 +252,7 @@ export default function FeaturedSection() {
       allIds.map((id) => ({
         id,
         title: productData[id],
-        image: `/images/processed/img_${id}.png`,
+        image: `/images/processed/img_${id}.webp`,
         alt: productData[id],
       }))
     );

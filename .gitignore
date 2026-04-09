@@ -11,6 +11,7 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyd
+*.py
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
@@ -18,6 +19,8 @@ __pycache__/
 # Local/generated data
 tmp_images.json
 real/
+WhatsApp Image*
+public/images/processed/*.png
 
 # Local agent metadata
 .agent/

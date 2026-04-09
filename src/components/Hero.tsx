@@ -31,9 +31,11 @@ export default function Hero() {
       >
         {/* Continuous breathing zoom after initial reveal */}
         <motion.img
-          src="images/radha_krishna.png"
+          src="images/radha_krishna.webp"
           alt="Divine Makrana Marble Murti"
           className="w-full h-full object-cover"
+          loading="eager"
+          decoding="sync"
           animate={{ scale: [1, 1.06, 1] }}
           transition={{ duration: 18, ease: 'easeInOut', repeat: Infinity }}
         />
