@@ -3,7 +3,30 @@ dist/
 .vscode/
 *.tsbuildinfo
 *.log
-.DS_Store
+
+# Python virtual environments and caches
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local/generated data
 tmp_images.json
+public/images/processed/
+real/
+
+# Local agent metadata
+.agent/
+
+# Platform junk
+.DS_Store
+Thumbs.db
+
+# Generated config outputs
 vite.config.js
 vite.config.d.ts

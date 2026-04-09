@@ -9,7 +9,7 @@ export default {
         surface: "#121212",
         accent: "#C6A15B",
         primary: "#F5F5F5",
-        secondary: "#A8A8A8",
+        secondary: "#BCBCBC",
         marble: "#E8E6E3"
       },
       fontFamily: {

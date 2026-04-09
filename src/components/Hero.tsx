@@ -31,7 +31,7 @@ export default function Hero() {
       >
         {/* Continuous breathing zoom after initial reveal */}
         <motion.img
-          src="/images/radha_krishna.png"
+          src="images/radha_krishna.png"
           alt="Divine Makrana Marble Murti"
           className="w-full h-full object-cover"
           animate={{ scale: [1, 1.06, 1] }}
@@ -80,17 +80,25 @@ export default function Hero() {
           Est. Jaipur
         </motion.p>
 
-        {/* Heading — "Where Marble" slides up first */}
+        {/* Heading — "Where Marble" slides up with staggered characters */}
         <div className="overflow-hidden mb-2">
-          <motion.div
+          <motion.h1
+            className="font-serif text-[clamp(42px,7vw,100px)] leading-[1.05] text-marble block"
             initial={{ y: '110%' }}
-            animate={{ y: '0%' }}
+            animate={{ y: 0 }}
             transition={{ duration: 1.2, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
           >
-            <span className="font-serif text-[clamp(42px,7vw,100px)] leading-[1.05] text-marble block">
-              Where Marble
-            </span>
-          </motion.div>
+            {"Where Marble".split("").map((char, index) => (
+              <motion.span
+                key={index}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.4, delay: 0.6 + index * 0.03 }}
+              >
+                {char}
+              </motion.span>
+            ))}
+          </motion.h1>
         </div>
 
         {/* "Becomes Divine" slides up second with shimmer */}
@@ -98,7 +106,7 @@ export default function Hero() {
           <motion.div
             initial={{ y: '110%' }}
             animate={{ y: '0%' }}
-            transition={{ duration: 1.2, delay: 0.6, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 1.2, delay: 1, ease: [0.16, 1, 0.3, 1] }}
           >
             <span
               className="font-serif text-[clamp(42px,7vw,100px)] leading-[1.05] italic inline-block"
@@ -116,23 +124,23 @@ export default function Hero() {
           </motion.div>
         </div>
 
-        {/* Subtext — fades in */}
+        {/* Subtext — fades in with blur reveal */}
         <motion.p
           className="font-sans font-light text-marble/80 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed mb-14"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 1.2 }}
+          initial={{ opacity: 0, y: 20, filter: 'blur(8px)' }}
+          animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
+          transition={{ duration: 1.2, delay: 1.4 }}
         >
           Handcrafted Makrana Marble Murtis from Jaipur — where devotion meets generational craftsmanship.
         </motion.p>
 
         {/* Button — slides up with glow */}
         <motion.a
-          href="#products"
+          href="#collection"
           className="relative inline-block px-12 py-4 border border-[#C6A15B]/50 font-sans uppercase tracking-[0.25em] text-xs text-[#C6A15B] overflow-hidden group"
           initial={{ opacity: 0, y: 25 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 1.6 }}
+          transition={{ duration: 0.8, delay: 1.8 }}
           whileHover={{ scale: 1.04 }}
           whileTap={{ scale: 0.98 }}
         >

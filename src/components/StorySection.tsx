@@ -12,7 +12,7 @@ export default function Heritage() {
       {/* Full-width parallax background */}
       <motion.div className="absolute inset-0" style={{ y: bgY }}>
         <img
-          src="/images/artisan_hands.png"
+          src="images/artisan_hands.png"
           alt="Master artisan hand-carving Makrana marble with fine tools"
           className="w-full h-[120%] object-cover"
         />

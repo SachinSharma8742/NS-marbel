@@ -8,20 +8,24 @@ import FAQ from './components/FAQ';
 import PreCTA from './components/PreCTA';
 import FinalCTA from './components/FinalCTA';
 import Footer from './components/Footer';
+import SmoothScroll from './components/ui/SmoothScroll';
 
 export default function Home() {
   return (
-    <main className="bg-[#0B0B0C] text-[#E8E6E3]">
-      <Hero />
-      <Legacy />
-      <Heritage />
-      <FeaturedSection />
-      <Promise />
-      <Trust />
-      <FAQ />
-      <PreCTA />
-      <FinalCTA />
-      <Footer />
-    </main>
+    <SmoothScroll>
+      <main className="bg-[#0B0B0C] text-[#E8E6E3] relative">
+        <div className="grain-overlay" />
+        <Hero />
+        <Legacy />
+        <Heritage />
+        <FeaturedSection />
+        <Promise />
+        <Trust />
+        <FAQ />
+        <PreCTA />
+        <FinalCTA />
+        <Footer />
+      </main>
+    </SmoothScroll>
   );
 }

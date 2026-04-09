@@ -2,12 +2,12 @@ import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 
 const posts = [
-  { src: '/images/gallery_1.png', caption: 'Makrana marble Radha Krishna murti in progress' },
-  { src: '/images/gallery_2.png', caption: 'Hand-finishing details by master artisan' },
-  { src: '/images/gallery_3.png', caption: 'Temple installation completed in Jaipur' },
-  { src: '/images/gallery_4.png', caption: 'Intricate floral carving close-up' },
-  { src: '/images/gallery_5.png', caption: 'Custom Ganesh murti for home mandir' },
-  { src: '/images/gallery_6.png', caption: 'Final polishing before delivery' },
+  { src: 'images/gallery_1.png', caption: 'Makrana marble Radha Krishna murti in progress' },
+  { src: 'images/gallery_2.png', caption: 'Hand-finishing details by master artisan' },
+  { src: 'images/gallery_3.png', caption: 'Temple installation completed in Jaipur' },
+  { src: 'images/gallery_4.png', caption: 'Intricate floral carving close-up' },
+  { src: 'images/gallery_5.png', caption: 'Custom Ganesh murti for home mandir' },
+  { src: 'images/gallery_6.png', caption: 'Final polishing before delivery' },
 ];
 
 export default function Trust() {
@@ -15,7 +15,8 @@ export default function Trust() {
   const inView = useInView(ref, { once: true, margin: '-100px' });
 
   return (
-    <section ref={ref} id="trust" className="relative w-full py-32 px-6 md:px-12">
+    <section ref={ref} id="trust" className="relative w-full py-32 px-6 md:px-12 bg-[#0D0D0E]">
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(198,161,91,0.05),transparent_45%)]" />
       <div className="max-w-7xl mx-auto space-y-10">
         <motion.div
           className="text-center"
@@ -43,8 +44,8 @@ export default function Trust() {
               transition={{ duration: 0.6 }}
             >
               <img src={posts[0].src} alt={posts[0].caption} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-              <div className="absolute inset-0 bg-[#0B0B0C]/0 group-hover:bg-[#0B0B0C]/50 transition-all duration-400 flex items-end p-4">
-                <span className="font-sans text-xs text-marble/0 group-hover:text-marble/90 transition-all duration-400">{posts[0].caption}</span>
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0B0B0C]/60 via-[#0B0B0C]/10 to-transparent md:bg-[#0B0B0C]/0 md:group-hover:bg-[#0B0B0C]/50 transition-all duration-400 flex items-end p-4">
+                <span className="font-sans text-xs text-marble/85 md:text-marble/0 md:group-hover:text-marble/90 transition-all duration-400">{posts[0].caption}</span>
               </div>
             </motion.div>
             <motion.div
@@ -54,8 +55,8 @@ export default function Trust() {
               transition={{ duration: 0.6, delay: 0.08 }}
             >
               <img src={posts[1].src} alt={posts[1].caption} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-              <div className="absolute inset-0 bg-[#0B0B0C]/0 group-hover:bg-[#0B0B0C]/50 transition-all duration-400 flex items-end p-4">
-                <span className="font-sans text-xs text-marble/0 group-hover:text-marble/90 transition-all duration-400">{posts[1].caption}</span>
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0B0B0C]/60 via-[#0B0B0C]/10 to-transparent md:bg-[#0B0B0C]/0 md:group-hover:bg-[#0B0B0C]/50 transition-all duration-400 flex items-end p-4">
+                <span className="font-sans text-xs text-marble/85 md:text-marble/0 md:group-hover:text-marble/90 transition-all duration-400">{posts[1].caption}</span>
               </div>
             </motion.div>
           </div>
@@ -69,8 +70,8 @@ export default function Trust() {
               transition={{ duration: 0.6, delay: 0.16 }}
             >
               <img src={posts[2].src} alt={posts[2].caption} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-              <div className="absolute inset-0 bg-[#0B0B0C]/0 group-hover:bg-[#0B0B0C]/50 transition-all duration-400 flex items-end p-4">
-                <span className="font-sans text-xs text-marble/0 group-hover:text-marble/90 transition-all duration-400">{posts[2].caption}</span>
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0B0B0C]/60 via-[#0B0B0C]/10 to-transparent md:bg-[#0B0B0C]/0 md:group-hover:bg-[#0B0B0C]/50 transition-all duration-400 flex items-end p-4">
+                <span className="font-sans text-xs text-marble/85 md:text-marble/0 md:group-hover:text-marble/90 transition-all duration-400">{posts[2].caption}</span>
               </div>
             </motion.div>
             <motion.div
@@ -80,8 +81,8 @@ export default function Trust() {
               transition={{ duration: 0.6, delay: 0.24 }}
             >
               <img src={posts[3].src} alt={posts[3].caption} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-              <div className="absolute inset-0 bg-[#0B0B0C]/0 group-hover:bg-[#0B0B0C]/50 transition-all duration-400 flex items-end p-4">
-                <span className="font-sans text-xs text-marble/0 group-hover:text-marble/90 transition-all duration-400">{posts[3].caption}</span>
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0B0B0C]/60 via-[#0B0B0C]/10 to-transparent md:bg-[#0B0B0C]/0 md:group-hover:bg-[#0B0B0C]/50 transition-all duration-400 flex items-end p-4">
+                <span className="font-sans text-xs text-marble/85 md:text-marble/0 md:group-hover:text-marble/90 transition-all duration-400">{posts[3].caption}</span>
               </div>
             </motion.div>
           </div>
@@ -97,8 +98,8 @@ export default function Trust() {
                 transition={{ duration: 0.6, delay: 0.32 + 0.08 * i }}
               >
                 <img src={post.src} alt={post.caption} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-                <div className="absolute inset-0 bg-[#0B0B0C]/0 group-hover:bg-[#0B0B0C]/50 transition-all duration-400 flex items-end p-4">
-                  <span className="font-sans text-xs text-marble/0 group-hover:text-marble/90 transition-all duration-400">{post.caption}</span>
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0B0B0C]/60 via-[#0B0B0C]/10 to-transparent md:bg-[#0B0B0C]/0 md:group-hover:bg-[#0B0B0C]/50 transition-all duration-400 flex items-end p-4">
+                  <span className="font-sans text-xs text-marble/85 md:text-marble/0 md:group-hover:text-marble/90 transition-all duration-400">{post.caption}</span>
                 </div>
               </motion.div>
             ))}

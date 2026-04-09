@@ -1,62 +1,97 @@
 export default function Footer() {
   return (
-    <footer className="relative w-full pt-20 pb-12 px-6 md:px-12 border-t border-white/5 bg-[#09090A]">
-      {/* Subtle organic glow */}
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_70%_20%,rgba(198,161,91,0.05),transparent_45%)]" />
-      
-      <div className="max-w-7xl mx-auto relative z-10">
-        <div className="grid grid-cols-2 md:grid-cols-[1.5fr_1fr_1fr] gap-x-8 gap-y-16 mb-20">
+    <footer className="relative w-full border-t border-[#C6A15B]/10 bg-[#0B0B0C] overflow-hidden">
+      {/* Subtle gold glow */}
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(198,161,91,0.08),transparent_60%)]" />
 
-          {/* Brand Section — Full width on small mobile, spans 2 cols on medium-small */}
-          <div className="col-span-2 md:col-span-1">
-            <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-accent mb-6">NS Marble Art Museum</p>
-            <h3 className="font-serif text-[clamp(28px,3.5vw,48px)] text-marble leading-[1.1] mb-6">
-              Crafted for temples,<br className="hidden md:block" /> and sacred spaces.
-            </h3>
-            <p className="font-sans font-light text-secondary text-sm leading-relaxed max-w-sm opacity-80">
-              Hand-carved Makrana marble sculptures created by master artisans in Jaipur with temple-grade finishing.
-            </p>
-          </div>
-
-          {/* Pages Section */}
-          <div className="col-span-1">
-            <p className="font-sans text-[10px] uppercase tracking-[0.3em] text-accent mb-8">Navigation</p>
-            <nav className="flex flex-col gap-4 font-sans text-sm text-secondary">
-              <a href="#hero" className="hover:text-accent transition-colors duration-300">Home</a>
-              <a href="#legacy" className="hover:text-accent transition-colors duration-300">Heritage</a>
-              <a href="#collection" className="hover:text-accent transition-colors duration-300">Collection</a>
-              <a href="#trust" className="hover:text-accent transition-colors duration-300">Gallery</a>
-              <a href="#faq" className="hover:text-accent transition-colors duration-300">FAQ</a>
-            </nav>
-          </div>
-
-          {/* Contact Section */}
-          <div className="col-span-1 md:text-right">
-            <p className="font-sans text-[10px] uppercase tracking-[0.3em] text-accent mb-8">Contact</p>
-            <div className="font-sans font-light text-secondary text-sm space-y-4">
-              <p className="md:ml-auto">Jaipur, Rajasthan</p>
-              <a href="tel:+919664174934" className="block hover:text-accent transition-colors duration-300">+91 96641 74934</a>
-              <div className="flex flex-col md:items-end gap-3 pt-2">
-                <a href="https://wa.me/919664174934" target="_blank" rel="noopener noreferrer" className="inline-block px-4 py-2 border border-white/10 hover:border-accent/30 hover:text-accent transition-all duration-300 text-[11px] uppercase tracking-widest bg-white/[0.02]">
-                  WhatsApp
-                </a>
-                <a href="https://www.instagram.com/ns_marble_art_museum" target="_blank" rel="noopener noreferrer" className="inline-block px-4 py-2 border border-white/10 hover:border-accent/30 hover:text-accent transition-all duration-300 text-[11px] uppercase tracking-widest bg-white/[0.02]">
-                  Instagram
-                </a>
-              </div>
+      <div className="max-w-6xl mx-auto px-6 md:px-12 py-20 relative z-10">
+        {/* Main content grid */}
+        <div className="grid md:grid-cols-[2fr_1fr_1fr] gap-16 md:gap-20 mb-16">
+          {/* Left: Brand & Tagline */}
+          <div className="space-y-6">
+            <div>
+              <h3 className="font-serif text-[clamp(28px,3.5vw,42px)] text-marble leading-[1.1] mb-3">
+                Shree Krishna<br />Moorti Museum
+              </h3>
+              <p className="font-sans text-[11px] tracking-[0.3em] uppercase text-[#C6A15B]/70">
+                Manufacturers, Wholesalers &amp; Exporters
+              </p>
             </div>
+            <p className="font-sans font-light text-secondary/80 text-sm leading-relaxed max-w-sm">
+              Artisanal marble moorties crafted in Jaipur by master sculptors. Devotional authenticity meets timeless craftsmanship.
+            </p>
+            <div className="pt-4">
+              <a
+                href="mailto:mohitagnihotri432@gmail.com"
+                className="font-sans text-sm text-[#C6A15B] hover:text-marble transition-colors duration-300"
+              >
+                mohitagnihotri432@gmail.com
+              </a>
+            </div>
+          </div>
+
+          {/* Center: Mukesh */}
+          <div className="space-y-4">
+            <p className="font-sans text-[11px] tracking-[0.3em] uppercase text-[#C6A15B]">Mukesh Agnihotri</p>
+            <div className="space-y-3">
+              <a href="tel:+919460149982" className="block font-sans text-secondary/90 hover:text-marble text-sm transition-colors">
+                +91 94601 49982
+              </a>
+              <a href="tel:+918209172990" className="block font-sans text-secondary/90 hover:text-marble text-sm transition-colors">
+                +91 82091 72990
+              </a>
+            </div>
+            <a
+              href="https://wa.me/919460149982"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block mt-4 px-3 py-2 border border-[#C6A15B]/30 hover:border-[#C6A15B]/70 text-[#C6A15B] hover:text-marble text-[10px] uppercase tracking-[0.2em] transition-all duration-300"
+            >
+              WhatsApp
+            </a>
+          </div>
+
+          {/* Right: Mohit */}
+          <div className="space-y-4">
+            <p className="font-sans text-[11px] tracking-[0.3em] uppercase text-[#C6A15B]">Mohit Agnihotri</p>
+            <div className="space-y-3">
+              <a href="tel:+919784883775" className="block font-sans text-secondary/90 hover:text-marble text-sm transition-colors">
+                +91 97848 83775
+              </a>
+              <a href="tel:+917014431153" className="block font-sans text-secondary/90 hover:text-marble text-sm transition-colors">
+                +91 70144 31153
+              </a>
+            </div>
+            <a
+              href="https://wa.me/919784883775"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block mt-4 px-3 py-2 border border-[#C6A15B]/30 hover:border-[#C6A15B]/70 text-[#C6A15B] hover:text-marble text-[10px] uppercase tracking-[0.2em] transition-all duration-300"
+            >
+              WhatsApp
+            </a>
           </div>
         </div>
 
-        {/* Bottom Bar */}
-        <div className="pt-8 border-t border-white/[0.03] flex flex-col md:flex-row justify-between items-center gap-6">
-          <p className="font-sans text-[10px] tracking-widest text-secondary/40">
-            &copy; {new Date().getFullYear()} NS MARBLE ART MUSEUM
+        {/* Address Bar */}
+        <div className="mb-12 pb-12 border-b border-[#C6A15B]/10">
+          <p className="font-sans text-[11px] tracking-[0.3em] uppercase text-[#C6A15B] mb-4">Located in Jaipur</p>
+          <p className="font-sans text-secondary/80 text-sm leading-relaxed">
+            3237, Bhindo Ka Rasta 1st Crossing, Chandpole Bazar, Jaipur, Rajasthan
           </p>
-          <div className="flex gap-8 font-sans text-[10px] tracking-widest text-secondary/40 uppercase">
-            <span className="hover:text-secondary cursor-pointer transition-colors">Privacy</span>
-            <span className="hover:text-secondary cursor-pointer transition-colors">Terms</span>
-          </div>
+        </div>
+
+        {/* Bottom: Nav & Copyright */}
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
+          <nav className="flex gap-8 font-sans text-[11px] tracking-[0.2em] uppercase text-secondary/60">
+            <a href="#hero" className="hover:text-[#C6A15B] transition-colors">Home</a>
+            <a href="#legacy" className="hover:text-[#C6A15B] transition-colors">Heritage</a>
+            <a href="#collection" className="hover:text-[#C6A15B] transition-colors">Collection</a>
+            <a href="#faq" className="hover:text-[#C6A15B] transition-colors">FAQ</a>
+          </nav>
+          <p className="font-sans text-[10px] tracking-widest text-secondary/50">
+            &copy; {new Date().getFullYear()} Shree Krishna Moorti Museum
+          </p>
         </div>
       </div>
     </footer>

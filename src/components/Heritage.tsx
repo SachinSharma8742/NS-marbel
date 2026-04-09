@@ -19,7 +19,7 @@ export default function Legacy() {
             transition={{ duration: 1, ease: 'easeOut' }}
           >
             <img
-              src="/images/gallery_1.png"
+              src="images/gallery_1.png"
               alt="Makrana marble deity sculpture under workshop lighting"
               className="w-full h-full object-cover"
             />
